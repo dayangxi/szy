@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>信息发布平台</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="/layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="/layuiadmin/style/admin.css" media="all">
+  <style>
+    .layadmin-iframe{
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body class="layui-layout-body">
+
+  <div id="LAY_app">
+    <div class="layui-layout layui-layout-admin">
+      <div class="layui-header">
+        <!-- 头部区域 -->
+        <ul class="layui-nav layui-layout-left">
+          <li class="layui-nav-item layadmin-flexible" lay-unselect>
+            <a href="javascript:;" layadmin-event="flexible" title="侧边伸缩">
+              <i class="layui-icon layui-icon-shrink-right" id="LAY_app_flexible"></i>
+            </a>
+          </li>
+          <li class="layui-nav-item" lay-unselect>
+            <a href="javascript:;" layadmin-event="refresh" title="刷新">
+              <i class="layui-icon layui-icon-refresh-3"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="layui-nav layui-layout-right" lay-filter="layadmin-layout-right">
+          <li class="layui-nav-item layui-hide-xs" lay-unselect>
+            <a href="javascript:;" layadmin-event="theme">
+              <i class="layui-icon layui-icon-theme"></i>
+            </a>
+          </li>
+          <li class="layui-nav-item layui-hide-xs" lay-unselect>
+            <a href="javascript:;" layadmin-event="fullscreen">
+              <i class="layui-icon layui-icon-screen-full"></i>
+            </a>
+          </li>
+          <li class="layui-nav-item" lay-unselect>
+            <a href="javascript:;">
+              <cite id="name">管理员</cite>
+            </a>
+            <dl class="layui-nav-child">
+              <dd  style="text-align: center;"><a id="logout">退出</a></dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 侧边菜单 -->
+      <div class="layui-side layui-side-menu">
+        <div class="layui-side-scroll">
+          <div class="layui-logo">
+            <span>驻场服务</span>
+          </div>
+          <ul class="layui-nav layui-nav-tree" lay-shrink="all" id="LAY-system-side-menu" lay-filter="layadmin-system-side-menu">
+
+            <li data-name="home" class="layui-nav-item layui-nav-itemed">
+                <!-- <a lay-href="html/card.html"> -->
+              <a lay-href="https://www.baidu.com">
+                <i class="layui-icon layui-icon-layer"></i>
+                <cite>首页</cite>
+              </a>
+            </li>
+
+            <!--<li data-name="check" class="layui-nav-item layui-nav-itemed">-->
+              <!--&lt;!&ndash; <a lay-href="html/detail.html"> &ndash;&gt;-->
+              <!--<a lay-href="https://www.abcsoft.tech/WebReport/ReportServer?reportlet=szy%2Fzcfw.cpt&op=write">-->
+                <!--<i class="layui-icon layui-icon-password"></i>-->
+                <!--<cite>驻场服务</cite>-->
+              <!--</a>-->
+            <!--</li>-->
+            <li data-name="zcfw" class="layui-nav-item layui-nav-itemed">
+              <a href="javascript:;">
+                <i class="layui-icon layui-icon-password"></i>
+                <cite>驻场服务</cite>
+              </a>
+              <dl class="layui-nav-child">
+                <dd><a lay-href="https://www.abcsoft.tech/WebReport/ReportServer?reportlet=szy%2Fzcfw.cpt&op=write">查询</a></dd>
+                <dd><a lay-href="" id="addNew">新增</a></dd>
+              </dl>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- 页面标签 -->
+      <div class="layadmin-pagetabs" id="LAY_app_tabs">
+        <div class="layui-icon layadmin-tabs-control layui-icon-prev" layadmin-event="leftPage"></div>
+        <div class="layui-icon layadmin-tabs-control layui-icon-next" layadmin-event="rightPage"></div>
+        <div class="layui-icon layadmin-tabs-control layui-icon-down">
+          <ul class="layui-nav layadmin-tabs-select" lay-filter="layadmin-pagetabs-nav">
+            <li class="layui-nav-item" lay-unselect>
+              <a href="javascript:;"></a>
+              <dl class="layui-nav-child layui-anim-fadein">
+                <dd layadmin-event="closeThisTabs"><a href="javascript:;">关闭当前标签页</a></dd>
+                <dd layadmin-event="closeOtherTabs"><a href="javascript:;">关闭其它标签页</a></dd>
+                <dd layadmin-event="closeAllTabs"><a href="javascript:;">关闭全部标签页</a></dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+        <div class="layui-tab" lay-unauto lay-allowClose="true" lay-filter="layadmin-layout-tabs">
+          <ul class="layui-tab-title" id="LAY_app_tabsheader">
+            <li lay-id="https://www.baidu.com" lay-attr="https://www.baidu.com" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <!-- 主体内容 -->
+      <div class="layui-body" id="LAY_app_body">
+        <div class="layadmin-tabsbody-item layui-show">
+          <iframe src="https://www.baidu.com" frameborder="0" class="layadmin-iframe"></iframe>
+        </div>
+      </div>
+
+      <!-- 辅助元素，一般用于移动设备下遮罩 -->
+      <div class="layadmin-body-shade" layadmin-event="shade"></div>
+    </div>
+  </div>
+  <script src="/url.js"></script>
+  <script src="/layuiadmin/layui/layui.js"></script>
+  <script>
+  layui.config({
+    base: '/layuiadmin/' //静态资源所在路径
+  }).extend({
+    index: 'lib/index' //主入口模块
+  }).use(['index','element'],function () {
+      var $ = layui.$;
+      var url = window.url;
+
+      // console.log(localStorage.getItem('uid'));
+      // console.log(localStorage.getItem('username'));
+
+      // var username = localStorage.getItem('username');
+      // var uid = localStorage.getItem('uid');
+      // if (!username||!uid){
+      //     layer.msg('请登录');
+      //     location.href = '../';
+      // }else {
+      //   $("#name").html(username);
+      // }
+
+      //退出登录
+      $("#logout").click(function () {
+          location.href = 'login.html';
+          localStorage.removeItem('username');
+      });
+    //  调用接口获取编码
+    $("#addNew").click(function (e) {
+      // console.log(this);
+      var layHref = "https://www.abcsoft.tech/WebReport/ReportServer?reportlet=szy%2Fzcfwmxdj.cpt&op=write";
+
+      //获取服务单号的编码
+        var arr = {
+        "code": "6003"
+      };
+      // console.log(url);
+      arr = JSON.stringify(arr);
+      $.ajax({
+        url:url+'/yzcx',
+        headers:{
+          "Content-Type": "application/json"
+        },
+        async:false, //设置ajax的同步
+        data:arr,
+        type:"POST",
+        success:function (res) {
+          res = JSON.parse(res);
+          var layUrl = layHref+'&bm='+res.msg;
+          $("#addNew").attr("lay-href",layUrl);
+        },error(err){
+          console.log(err)
+        }
+      });
+
+    })
+
+
+  });
+  </script>
+</body>
+</html>
+
+
