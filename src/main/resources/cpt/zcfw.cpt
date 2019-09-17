@@ -202,7 +202,7 @@ ${if(len(yymc) == 0,"","and cyymc = '" + yymc + "'")}]]></Query>
 </WebWriteContent>
 </ReportWebAttr>
 <ElementCaseMobileAttr>
-<ElementCaseMobileAttrProvider horizontal="1" vertical="1" zoom="true" refresh="false" isUseHTML="false" isMobileCanvasSize="false"/>
+<ElementCaseMobileAttrProvider horizontal="1" vertical="1" zoom="true" refresh="false" isUseHTML="false" isMobileCanvasSize="false" appearRefresh="false" allowFullScreen="false"/>
 </ElementCaseMobileAttr>
 <Report class="com.fr.report.worksheet.WorkSheet" name="sheet1">
 <ReportPageAttr>
@@ -216,7 +216,7 @@ ${if(len(yymc) == 0,"","and cyymc = '" + yymc + "'")}]]></Query>
 <RowHeight defaultValue="723900">
 <![CDATA[1866900,1562100,1943100,1905000,1943100,723900,723900,723900,723900,723900,723900]]></RowHeight>
 <ColumnWidth defaultValue="2743200">
-<![CDATA[2743200,2743200,7772400,3695700,4953000,4648200,2743200,2743200,2743200,2743200,2743200]]></ColumnWidth>
+<![CDATA[3352800,6387152,6496334,5630778,6737684,6208294,4908884,4668252,2743200,2743200,2743200]]></ColumnWidth>
 <CellElementList>
 <C c="0" r="0" cs="6" s="0">
 <O>
@@ -457,7 +457,7 @@ FR.Msg.confirm("提示","是否确认删除？",function(value){
 </Parameters>
 <TargetFrame>
 <![CDATA[_dialog]]></TargetFrame>
-<Features width="800" height="600"/>
+<Features width="1200" height="600"/>
 <ReportletName showPI="true">
 <![CDATA[/szy/zcfwxg.cpt]]></ReportletName>
 </JavaScript>
@@ -475,9 +475,10 @@ FR.Msg.confirm("提示","是否确认删除？",function(value){
 <ReportSettings headerHeight="0" footerHeight="0">
 <FrozenColumnRow columnrow="A3"/>
 <PaperSetting>
-<PaperSize width="43200000" height="42768000"/>
+<PaperSize width="50400000" height="42768000"/>
 <Margin top="986400" left="2743200" bottom="986400" right="2743200"/>
 </PaperSetting>
+<Background name="ColorBackground" color="-1"/>
 </ReportSettings>
 <Header reportPageType="0">
 <Background name="NullBackground"/>
@@ -568,7 +569,7 @@ FR.Msg.confirm("提示","是否确认删除？",function(value){
 <![CDATA[]]></O>
 </widgetValue>
 </InnerWidget>
-<BoundsAttr x="722" y="25" width="93" height="21"/>
+<BoundsAttr x="722" y="25" width="161" height="21"/>
 </Widget>
 <Widget class="com.fr.form.ui.container.WAbsoluteLayout$BoundsWidget">
 <InnerWidget class="com.fr.form.ui.Label">
@@ -703,7 +704,7 @@ FR.Msg.confirm("提示","是否确认删除？",function(value){
 <Hotkeys>
 <![CDATA[enter]]></Hotkeys>
 </InnerWidget>
-<BoundsAttr x="836" y="25" width="80" height="21"/>
+<BoundsAttr x="923" y="25" width="80" height="21"/>
 </Widget>
 <Sorted sorted="false"/>
 <MobileWidgetList>
@@ -796,7 +797,7 @@ FR.Msg.confirm("提示","是否确认删除？",function(value){
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="80" foreground="-16776961" underline="1"/>
+<FRFont name="SimSun" style="0" size="80" foreground="-1" underline="1"/>
 <Background name="ColorBackground" color="-11753238"/>
 <Border>
 <Top style="1" color="-3085573"/>
