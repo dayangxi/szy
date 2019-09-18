@@ -2,13 +2,7 @@
 <WorkBook xmlVersion="20170720" releaseVersion="9.0.0">
 <TableDataMap>
 <TableData name="ds1" class="com.fr.data.impl.DBTableData">
-<Parameters>
-<Parameter>
-<Attributes name="fwdh"/>
-<O>
-<![CDATA[BM462]]></O>
-</Parameter>
-</Parameters>
+<Parameters/>
 <Attributes maxMemRowCount="-1"/>
 <Connection class="com.fr.data.impl.NameDatabaseConnection">
 <DatabaseName>
@@ -18,13 +12,7 @@
 <![CDATA[SELECT * FROM `zcfw_fwhz`]]></Query>
 </TableData>
 <TableData name="ds2" class="com.fr.data.impl.DBTableData">
-<Parameters>
-<Parameter>
-<Attributes name="fwdh"/>
-<O>
-<![CDATA[BM462]]></O>
-</Parameter>
-</Parameters>
+<Parameters/>
 <Attributes maxMemRowCount="-1"/>
 <Connection class="com.fr.data.impl.NameDatabaseConnection">
 <DatabaseName>
@@ -37,35 +25,52 @@
 <ReportWebAttr>
 <ServerPrinter/>
 <WebPageContent>
-<ToolBars/>
-<WebPage isPage="true" isShowAsImage="false" isAutoScale="false" isTDHeavy="false"/>
-</WebPageContent>
-<WebWriteContent>
 <ToolBars>
 <ToolBarManager>
 <Location>
 <Embed position="1"/>
 </Location>
 <ToolBar>
-<Widget class="com.fr.report.web.button.write.Submit">
+<Widget class="com.fr.report.web.button.page.First">
 <WidgetAttr description="">
 <PrivilegeControl/>
 </WidgetAttr>
 <Text>
-<![CDATA[${i18n('Utils-Submit')}]]></Text>
+<![CDATA[${i18n('ReportServerP-First')}]]></Text>
 <IconName>
-<![CDATA[submit]]></IconName>
-<Verify failVerifySubmit="false" value="true"/>
-<Sheet onlySubmitSelect="false"/>
+<![CDATA[first]]></IconName>
 </Widget>
-<Widget class="com.fr.report.web.button.write.Verify">
+<Widget class="com.fr.report.web.button.page.Previous">
 <WidgetAttr description="">
 <PrivilegeControl/>
 </WidgetAttr>
 <Text>
-<![CDATA[${i18n('Verify-Data_Verify')}]]></Text>
+<![CDATA[${i18n('ReportServerP-Previous')}]]></Text>
 <IconName>
-<![CDATA[verify]]></IconName>
+<![CDATA[previous]]></IconName>
+</Widget>
+<Widget class="com.fr.report.web.button.page.PageNavi">
+<WidgetAttr description="">
+<PrivilegeControl/>
+</WidgetAttr>
+</Widget>
+<Widget class="com.fr.report.web.button.page.Next">
+<WidgetAttr description="">
+<PrivilegeControl/>
+</WidgetAttr>
+<Text>
+<![CDATA[${i18n('ReportServerP-Next')}]]></Text>
+<IconName>
+<![CDATA[next]]></IconName>
+</Widget>
+<Widget class="com.fr.report.web.button.page.Last">
+<WidgetAttr description="">
+<PrivilegeControl/>
+</WidgetAttr>
+<Text>
+<![CDATA[${i18n('ReportServerP-Last')}]]></Text>
+<IconName>
+<![CDATA[last]]></IconName>
 </Widget>
 <Widget class="com.fr.report.web.button.NewPrint">
 <WidgetAttr description="">
@@ -95,36 +100,11 @@
 <IconName>
 <![CDATA[email]]></IconName>
 </Widget>
-<Widget class="com.fr.report.web.button.write.AppendColumnRow">
-<WidgetAttr description="">
-<PrivilegeControl/>
-</WidgetAttr>
-<Text>
-<![CDATA[${i18n('FR-Engine_Add_Record')}]]></Text>
-<IconName>
-<![CDATA[appendrow]]></IconName>
-</Widget>
-<Widget class="com.fr.report.web.button.write.ShowCellValue">
-<WidgetAttr description="">
-<PrivilegeControl/>
-</WidgetAttr>
-<widgetValue/>
-<LabelAttr verticalcenter="true" textalign="0" autoline="false"/>
-<FRFont name="SimSun" style="0" size="72"/>
-<border style="0" color="-723724"/>
-</Widget>
 </ToolBar>
 </ToolBarManager>
 </ToolBars>
-<SelectedColor/>
-<WebWrite SheetPosition="3"/>
-<RptLocation isShowAtLeft="false"/>
-<UnloadCheck/>
-<ShowWidgets show="true"/>
-<OtherAttr isAutoStash="false"/>
-</WebWriteContent>
-<CSSImport>
-<![CDATA[css/css.css]]></CSSImport>
+<WebPage isPage="true" isShowAsImage="false" isAutoScale="false" isTDHeavy="false"/>
+</WebPageContent>
 </ReportWebAttr>
 <ElementCaseMobileAttr>
 <ElementCaseMobileAttrProvider horizontal="1" vertical="1" zoom="true" refresh="false" isUseHTML="false" isMobileCanvasSize="false" appearRefresh="false" allowFullScreen="false"/>
@@ -139,9 +119,9 @@
 <ColumnPrivilegeControl/>
 <RowPrivilegeControl/>
 <RowHeight defaultValue="723900">
-<![CDATA[3850105,2550694,2406315,2598821,2550694,1981200,2358189,2310063,2117557,1485900,1485900,1333500,723900,1485900,723900]]></RowHeight>
+<![CDATA[3384644,3493826,3057098,3384644,2947916,1981200,2887578,2310063,2117557,1485900,2183641,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900,723900]]></RowHeight>
 <ColumnWidth defaultValue="2743200">
-<![CDATA[7218947,4716378,6160168,7988968,6545178,4379494,2743200,2743200,2743200,2743200,2743200]]></ColumnWidth>
+<![CDATA[7218947,4716378,6160168,11081982,6545178,8188656,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200,2743200]]></ColumnWidth>
 <CellElementList>
 <C c="0" r="0" cs="6" s="0">
 <O>
@@ -186,7 +166,7 @@
 </Widget>
 <Expand dir="0"/>
 </C>
-<C c="3" r="1" s="3">
+<C c="3" r="1" s="1">
 <O>
 <![CDATA[客户名称：]]></O>
 <PrivilegeControl/>
@@ -262,7 +242,7 @@ contentPane.setCellValue('E3',null,phone);
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="1" r="2" cs="2" s="4">
+<C c="1" r="2" cs="2" s="2">
 <O t="DSColumn">
 <Attributes dsName="ds1" columnName="clxr"/>
 <Complex/>
@@ -287,13 +267,13 @@ contentPane.setCellValue('E3',null,phone);
 </Widget>
 <Expand dir="0" leftParentDefault="false" left="B2"/>
 </C>
-<C c="3" r="2" s="5">
+<C c="3" r="2" s="3">
 <O>
 <![CDATA[联系电话：]]></O>
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="4" r="2" cs="2" s="6">
+<C c="4" r="2" cs="2" s="2">
 <O t="DSColumn">
 <Attributes dsName="ds1" columnName="cdh"/>
 <Complex/>
@@ -331,7 +311,7 @@ contentPane.setCellValue('E3',null,phone);
 </Widget>
 <Expand dir="0" leftParentDefault="false" left="B2"/>
 </C>
-<C c="0" r="3" s="7">
+<C c="0" r="3" s="3">
 <O>
 <![CDATA[到场时间：]]></O>
 <PrivilegeControl/>
@@ -365,13 +345,13 @@ contentPane.setCellValue('E3',null,phone);
 </Widget>
 <Expand dir="0" leftParentDefault="false" left="B2"/>
 </C>
-<C c="3" r="3" s="8">
+<C c="3" r="3" s="3">
 <O>
 <![CDATA[离场时间：]]></O>
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="4" r="3" cs="2" s="6">
+<C c="4" r="3" cs="2" s="2">
 <O t="DSColumn">
 <Attributes dsName="ds1" columnName="dlcsj"/>
 <Complex/>
@@ -399,13 +379,13 @@ contentPane.setCellValue('E3',null,phone);
 </Widget>
 <Expand dir="0"/>
 </C>
-<C c="0" r="4" s="1">
+<C c="0" r="4" s="4">
 <O>
 <![CDATA[创建人：]]></O>
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="1" r="4" cs="2" s="9">
+<C c="1" r="4" cs="2" s="5">
 <O t="DSColumn">
 <Attributes dsName="ds1" columnName="ccjr"/>
 <Complex/>
@@ -436,33 +416,33 @@ contentPane.setCellValue('E3',null,phone);
 </Widget>
 <Expand dir="0" leftParentDefault="false" left="B2"/>
 </C>
-<C c="3" r="4" s="10">
+<C c="3" r="4" s="6">
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="4" r="4" cs="2" s="11">
+<C c="4" r="4" cs="2" s="7">
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="0" r="6" cs="6" s="12">
+<C c="0" r="6" cs="6" s="8">
 <O>
 <![CDATA[服务内容详情]]></O>
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="0" r="7" cs="4" s="13">
+<C c="0" r="7" cs="4" s="9">
 <O>
 <![CDATA[服务内容详情]]></O>
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="4" r="7" cs="2" s="13">
+<C c="4" r="7" cs="2" s="9">
 <O>
 <![CDATA[是否为特殊事件]]></O>
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="0" r="8" cs="4" s="14">
+<C c="0" r="8" cs="4" s="10">
 <O t="DSColumn">
 <Attributes dsName="ds2" columnName="cfwnr"/>
 <Condition class="com.fr.data.condition.CommonCondition">
@@ -500,7 +480,7 @@ contentPane.setCellValue('E3',null,phone);
 </Widget>
 <Expand dir="0" upParentDefault="false" up="B2"/>
 </C>
-<C c="4" r="8" cs="2" s="15">
+<C c="4" r="8" cs="2" s="11">
 <O t="DSColumn">
 <Attributes dsName="ds2" columnName="iflag"/>
 <Complex/>
@@ -547,13 +527,13 @@ contentPane.setCellValue('E3',null,phone);
 </HighlightList>
 <Expand dir="0"/>
 </C>
-<C c="3" r="10" s="16">
+<C c="3" r="10" s="12">
 <O>
 <![CDATA[医院签字：]]></O>
 <PrivilegeControl/>
 <Expand/>
 </C>
-<C c="4" r="10" cs="2" s="17">
+<C c="4" r="10" cs="2" s="13">
 <PrivilegeControl/>
 <Expand/>
 </C>
@@ -561,13 +541,12 @@ contentPane.setCellValue('E3',null,phone);
 <ReportAttrSet>
 <ReportSettings isHorizontalCenterOnPage="true" headerHeight="0" footerHeight="0">
 <PaperSetting>
-<PaperSize width="43200000" height="42768000"/>
+<PaperSize width="50400000" height="42768000"/>
 <Margin top="986400" left="2743200" bottom="986400" right="2743200"/>
 </PaperSetting>
 <Background name="ColorBackground" color="-1"/>
 </ReportSettings>
 </ReportAttrSet>
-<ReportWriteAttr/>
 <PrivilegeControl/>
 </Report>
 <ReportParameterAttr>
@@ -577,101 +556,84 @@ contentPane.setCellValue('E3',null,phone);
 </ReportParameterAttr>
 <StyleList>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="1" size="160" foreground="-15834999"/>
+<FRFont name="SimSun" style="1" size="200"/>
 <Background name="NullBackground"/>
 <Border>
-<Bottom style="6" color="-3938312"/>
+<Bottom style="1"/>
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="微软雅黑" style="0" size="96" foreground="-1"/>
+<FRFont name="微软雅黑" style="0" size="144"/>
 <Background name="ColorBackground" color="-11230522"/>
 <Border>
-<Bottom style="1" color="-3938312"/>
+<Top style="1"/>
+<Bottom style="1" color="-3084036"/>
+<Left style="1"/>
+<Right style="1"/>
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96" foreground="-11230522"/>
+<FRFont name="SimSun" style="0" size="144"/>
 <Background name="ColorBackground" color="-1"/>
 <Border>
-<Top style="1" color="-6894375"/>
-<Bottom style="1" color="-6894375"/>
-<Right style="1" color="-6894375"/>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="微软雅黑" style="0" size="96" foreground="-1"/>
+<FRFont name="微软雅黑" style="0" size="144"/>
 <Background name="ColorBackground" color="-11230522"/>
-<Border>
-<Top style="1" color="-3938312"/>
-<Bottom style="1" color="-3938312"/>
-</Border>
-</Style>
-<Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96" foreground="-11230522"/>
-<Background name="ColorBackground" color="-1"/>
-<Border>
-<Top style="1" color="-6894375"/>
-<Bottom style="1" color="-6894375"/>
-</Border>
-</Style>
-<Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="微软雅黑" style="0" size="96" foreground="-1"/>
-<Background name="ColorBackground" color="-11230522"/>
-<Border>
-<Top style="1" color="-3938312"/>
-</Border>
-</Style>
-<Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96" foreground="-11230522"/>
-<Background name="ColorBackground" color="-1"/>
-<Border>
-<Top style="1" color="-6894375"/>
-<Bottom style="1" color="-3938312"/>
-<Right style="1" color="-6894375"/>
-</Border>
-</Style>
-<Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="微软雅黑" style="0" size="96" foreground="-1"/>
-<Background name="ColorBackground" color="-11230522"/>
-<Border>
-<Top style="1" color="-6894375"/>
-<Bottom style="1" color="-6894375"/>
-</Border>
-</Style>
-<Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="微软雅黑" style="0" size="96" foreground="-1"/>
-<Background name="ColorBackground" color="-11230522"/>
-<Border>
-<Top style="1" color="-6894375"/>
-<Bottom style="1" color="-3938312"/>
-</Border>
-</Style>
-<Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96" foreground="-11230522"/>
-<Background name="NullBackground"/>
 <Border>
 <Top style="1" color="-3084036"/>
 <Bottom style="1" color="-3084036"/>
-</Border>
-</Style>
-<Style imageLayout="1">
-<FRFont name="SimSun" style="0" size="72"/>
-<Background name="NullBackground"/>
-<Border>
-<Bottom style="1" color="-3084036"/>
-</Border>
-</Style>
-<Style imageLayout="1">
-<FRFont name="SimSun" style="0" size="72"/>
-<Background name="NullBackground"/>
-<Border>
-<Bottom style="1" color="-3084036"/>
-<Right style="1" color="-3084036"/>
+<Left style="1"/>
+<Right style="1"/>
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="1" size="160"/>
+<FRFont name="微软雅黑" style="0" size="144"/>
+<Background name="ColorBackground" color="-11230522"/>
+<Border>
+<Top style="1" color="-3084036"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
+</Border>
+</Style>
+<Style horizontal_alignment="0" imageLayout="1">
+<FRFont name="SimSun" style="0" size="144"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1" color="-1"/>
+</Border>
+</Style>
+<Style imageLayout="1">
+<FRFont name="SimSun" style="0" size="72"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3084036"/>
+<Bottom style="1" color="-16777216"/>
+<Left style="1" color="-1"/>
+<Right style="1" color="-1"/>
+</Border>
+</Style>
+<Style imageLayout="1">
+<FRFont name="SimSun" style="0" size="72"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1" color="-1"/>
+<Right style="1"/>
+</Border>
+</Style>
+<Style horizontal_alignment="0" imageLayout="1">
+<FRFont name="SimSun" style="1" size="200"/>
 <Background name="NullBackground"/>
 <Border>
 <Top color="-6894375"/>
@@ -681,7 +643,7 @@ contentPane.setCellValue('E3',null,phone);
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96" foreground="-1"/>
+<FRFont name="SimSun" style="0" size="144"/>
 <Background name="ColorBackground" color="-11230522"/>
 <Border>
 <Top style="1" color="-6894375"/>
@@ -691,25 +653,27 @@ contentPane.setCellValue('E3',null,phone);
 </Border>
 </Style>
 <Style horizontal_alignment="2" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96" foreground="-11230522"/>
+<FRFont name="SimSun" style="0" size="144"/>
 <Background name="NullBackground"/>
 <Border>
-<Bottom style="1" color="-3084036"/>
-<Left style="1" color="-3084036"/>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96" foreground="-11230522"/>
+<FRFont name="SimSun" style="0" size="144"/>
 <Background name="NullBackground"/>
 <Border>
-<Top style="1" color="-3934216"/>
-<Bottom style="1" color="-3934216"/>
-<Left style="1" color="-6894375"/>
-<Right style="1" color="-6894375"/>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
 </Border>
 </Style>
 <Style horizontal_alignment="0" imageLayout="1">
-<FRFont name="SimSun" style="0" size="96"/>
+<FRFont name="SimSun" style="0" size="144"/>
 <Background name="NullBackground"/>
 <Border>
 <Top color="-16777216"/>
@@ -723,7 +687,7 @@ contentPane.setCellValue('E3',null,phone);
 <Background name="NullBackground"/>
 <Border>
 <Top color="-16777216"/>
-<Bottom style="1" color="-3085573"/>
+<Bottom style="1"/>
 <Left color="-16777216"/>
 <Right color="-16777216"/>
 </Border>
@@ -731,8 +695,8 @@ contentPane.setCellValue('E3',null,phone);
 </StyleList>
 <DesignerVersion DesignerVersion="JAA"/>
 <PreviewType PreviewType="0"/>
-<TemplateID TemplateID="961e715b-6e50-4836-80ea-d5a999a80603"/>
+<TemplateID/>
 <TemplateIdAttMark class="com.fr.base.iofileattr.TemplateIdAttrMark">
-<TemplateIdAttMark TemplateId="8948d687-7c94-40f3-ae30-47e513b03be3"/>
+<TemplateIdAttMark TemplateId="f61a56f4-d1b8-4b6a-9ecd-bd642ae4be60"/>
 </TemplateIdAttMark>
 </WorkBook>
