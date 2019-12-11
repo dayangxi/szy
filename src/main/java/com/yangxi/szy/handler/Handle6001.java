@@ -17,7 +17,7 @@ public class Handle6001 extends HandleBase {
         //得到用户基本信息
         RspBase rsp;
         try {
-            ResultItem resultItem = yzcxMapper.login(rqt);
+            ResultItem resultItem = szyMapper.login(rqt);
             rsp = new RspBase(rqt.getCode(), resultItem.getCbm(),  resultItem.getCmsg());
         } catch (Exception e) {
             rsp = new RspBase(rqt.getCode(), FuncCode.ERR, "未知错误");

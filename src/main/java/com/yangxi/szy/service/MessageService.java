@@ -32,6 +32,12 @@ public class MessageService {
             //服务单号
             if (code.equalsIgnoreCase(FuncCode.ZCFW_FWDH))
                 msgHandle = SpringUtil.getBean(Handle6003.class);
+            //密码修改
+            if (code.equalsIgnoreCase(FuncCode.YZCX_PWD))
+                msgHandle = SpringUtil.getBean(Handle6004.class);
+            //验证码发送
+            if (code.equalsIgnoreCase(FuncCode.YZM_SEND))
+                msgHandle = SpringUtil.getBean(Handle9001.class);
         } catch (Exception e) {
             log.info(e.getMessage());
         }

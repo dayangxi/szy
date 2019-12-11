@@ -6,14 +6,16 @@ package com.yangxi.szy.rqt;
 public class Rqt6001 extends RqtBase {
     private String usr;
     private String pwd;
+    private String yzm;
 
     public Rqt6001() {
     }
 
-    public Rqt6001(String code, String usr, String pwd) {
+    public Rqt6001(String code, String usr, String pwd, String yzm) {
         super(code);
         this.usr = usr;
         this.pwd = pwd;
+        this.yzm = yzm;
     }
 
     public String getUsr() {
@@ -32,11 +34,20 @@ public class Rqt6001 extends RqtBase {
         this.pwd = pwd;
     }
 
+    public String getYzm() {
+        return yzm;
+    }
+
+    public void setYzm(String yzm) {
+        this.yzm = yzm;
+    }
+
     @Override
     public String toString() {
         return "Rqt6001{" +
                 "usr='" + usr + '\'' +
                 ", pwd='" + pwd + '\'' +
+                ", yzm='" + yzm + '\'' +
                 '}';
     }
 }

@@ -16,7 +16,7 @@ public class Handle6003 extends HandleBase {
         //得到用户基本信息
         RspBase rsp;
         try {
-            String fwdh = yzcxMapper.nextFWDH(rqt);
+            String fwdh = szyMapper.nextFWDH(rqt);
             rsp = new RspBase(rqt.getCode(), FuncCode.OK,  fwdh);
         } catch (Exception e) {
             rsp = new RspBase(rqt.getCode(), FuncCode.ERR, "未知错误");

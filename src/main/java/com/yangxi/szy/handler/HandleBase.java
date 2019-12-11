@@ -1,8 +1,9 @@
 package com.yangxi.szy.handler;
 
 import com.alibaba.fastjson.JSON;
-import com.yangxi.szy.mapper.YzcxMapper;
+import com.yangxi.szy.mapper.SzyMapper;
 import com.yangxi.szy.rsp.RspBase;
+import com.yangxi.szy.service.SmsService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,10 @@ public class HandleBase implements MsgHandle {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    protected YzcxMapper yzcxMapper;
+    protected SzyMapper szyMapper;
+
+    @Autowired
+    protected SmsService smsService;
 
     //默认处理函数
     public String handle(String jsonStr) {

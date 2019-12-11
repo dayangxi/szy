@@ -16,4 +16,10 @@ public class FuncCode {
 
     //驻场服务单号
     public static final String ZCFW_FWDH = "6003";
+
+    //院长查询-密码修改
+    public static final String YZCX_PWD = "6004";
+
+    //发送验证码
+    public static final String YZM_SEND = "9001";
 }
