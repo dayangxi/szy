@@ -1,2 +1,2 @@
 # szy
-data service demo 2222 
+data service for doctor and nurse platform based on mysql
